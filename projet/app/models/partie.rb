@@ -1,0 +1,2 @@
+class Partie < ApplicationRecord
+end

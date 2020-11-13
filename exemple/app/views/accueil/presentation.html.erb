@@ -1,0 +1,11 @@
+<% if user_signed_in? %>
+Bonjour <%= current_user.email %>, <br/>
+<%= link_to 'logout', destroy_user_session_path, method: :delete %>
+<% else %>
+<%= link_to 'login', new_user_session_path %>
+<% end %>
+
+bonjour accueil
+<a href="/exemple6">exemple</a>
+
+<%= link_to "exemple", "/exemple6" %>

@@ -1,0 +1,14 @@
+<h1>Liste des Recettes par users<br/></h1>
+
+<% @users.each do |u| %>
+
+    <h2> <%= u.fullname%>  <br/></h2>
+    <% u.recettes.each do |re| %>
+
+         <%= re.titre%>  <br/>
+    
+    <% end %>
+
+<% end %>
+<br/>
+<br/>

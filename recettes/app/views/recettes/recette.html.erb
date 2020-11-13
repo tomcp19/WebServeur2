@@ -1,0 +1,12 @@
+<h1>Détail de la recette<br/></h1>
+
+
+
+         <h2> <%= @recettes.titre%>  <br/></h2>
+
+         <% @recettes.recette_ingredients.each do |re| %>
+     
+             <%= re.ingredient.nom %> : <%= re.quantite %> <%= re.unite %>   <br/>
+
+<% end %>
+

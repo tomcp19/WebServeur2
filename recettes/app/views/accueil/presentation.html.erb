@@ -1,0 +1,11 @@
+
+
+
+<h1>Liste des Recettes <br/></h1>
+
+<% @recettes.each do |r| %>
+
+    <h2> <%= r.titre%>
+    <a href="/recettes/<%=r.id%>">Voir la recette</a>  <br/></h2>
+
+<% end %>
